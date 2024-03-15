@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("Mona-Sans.ttf") format("ttf-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+body {
+  background-color: #1d1a18;
+  font-family: "Mona Sans";
+  color: #fff;
+  margin: 40px 40px 0 40px;
+}
+
+@media (max-width: 550px) {
+  body {
+    margin: none;
+  }
+}

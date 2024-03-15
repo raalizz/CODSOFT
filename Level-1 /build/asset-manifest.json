@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a48fd488.css",
+    "main.js": "/static/js/main.de31f12d.js",
+    "static/js/860.ed5aae61.chunk.js": "/static/js/860.ed5aae61.chunk.js",
+    "static/media/hp-travel-project.png": "/static/media/hp-travel-project.1c2aa4ae2289840610a8.png",
+    "static/media/DictionaryProject.png": "/static/media/DictionaryProject.3bba913429bddabc4f57.png",
+    "static/media/my-picture.jpg": "/static/media/my-picture.a43b74565db77d8faa18.jpg",
+    "static/media/resume-pic.png": "/static/media/resume-pic.2b3794554b7641ce627e.png",
+    "static/media/Mona-Sans.ttf": "/static/media/Mona-Sans.16d953e2d42c311318e8.ttf",
+    "static/media/coding-pic.png": "/static/media/coding-pic.e77875538c715a6c2bba.png",
+    "static/media/React-weather-app.jpg": "/static/media/React-weather-app.98bc2aa71e548f45f08e.jpg",
+    "static/media/Raghda-alizz-alshaikhli-resume.pdf": "/static/media/Raghda-alizz-alshaikhli-resume.14e438036bc37ec8751f.pdf",
+    "static/media/NomNom-Ninja-AI-project .png": "/static/media/NomNom-Ninja-AI-project .86dfc320d4befd91a609.png",
+    "index.html": "/index.html",
+    "main.a48fd488.css.map": "/static/css/main.a48fd488.css.map",
+    "main.de31f12d.js.map": "/static/js/main.de31f12d.js.map",
+    "860.ed5aae61.chunk.js.map": "/static/js/860.ed5aae61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a48fd488.css",
+    "static/js/main.de31f12d.js"
+  ]
+}
