@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="This website was made as web development challenge and it's a landing page for my favorite vintage clothing brand" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <title>Femkit Clothing Brand</title>
+  <style>
+    :root {
+      --primary-color: #baa394;
+      --secondary-color: #2d2a27;
+      --primary-font: font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: var(--primary-font);
+      color: var(--primary-color);
+      background-color: var(--primary-color);
+
+    }
+
+    header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("images/header-pic.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      padding: 190px 0;
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 80px;
+      font-weight: 800;
+    }
+
+    h2 {
+      letter-spacing: 5px;
+      margin-top: 20px;
+    }
+
+    @keyframes downarrow {
+      0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4
+      }
+
+      100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.9
+      }
+    }
+
+    .arrow {
+      border-color: transparent;
+      border-style: solid;
+      border-width: 0 2em;
+      display: block;
+      height: 0;
+      margin: 7em auto;
+      opacity: 0.4;
+      text-indent: -9999px;
+      transform-origin: 50% 50%;
+      width: 0;
+    }
+
+    .down {
+      animation:
+        downarrow 0.6s infinite alternate ease-in-out;
+      border-top: 2em solid var(--primary-color);
+    }
+
+    .shop-link {
+      letter-spacing: 5px;
+      color: var(--primary-color);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 1px;
+    }
+
+    .grid img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    .grid .pic-3 {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .mid {
+      margin-top: -11px;
+    }
+
+    .mid img {
+      width: 100%;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: -3px;
+    }
+
+    .paragraph {
+      background-color: #fff;
+      color: var(--secondary-color)
+    }
+
+    .grid-2 .fourth-section-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+
+    .grid-2 .shop-info-1 {
+      font-size: 15px;
+      color: #444742;
+      border-left: 2px solid var(--primary-color);
+      margin-left: 40px;
+      padding: 10px;
+    }
+
+    .fabric-pic {
+      width: 230px;
+      filter: grayscale(100%);
+    }
+
+    .info-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 120px;
+      margin-top: 20px;
+
+    }
+
+    .info-2 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 75px;
+      margin-top: 60px;
+      margin-right: 60px;
+
+    }
+
+    .grid-2 .shop-info-2 {
+      font-size: 15px;
+      color: #444742;
+      border-left: 2px solid var(--primary-color);
+      margin-right: 10px;
+      padding: 10px;
+    }
+
+    .grid-2 .factory-pic {
+      width: 20vw;
+      filter: grayscale(100%);
+      margin-left: 40px;
+    }
+
+    .last {
+      margin-top: 1px;
+    }
+
+    .last-section-pic {
+      width: 100%;
+
+    }
+
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    footer a {
+      font-size: 15px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #444742;
+      letter-spacing: 1px;
+    }
+
+    footer a:hover {
+      color: #d2d2d1;
+    }
+
+
+    @media(max-width:550px) {
+      header {
+        padding: 80px 0;
+      }
+
+      header h1 {
+        letter-spacing: 33px;
+      }
+
+      header h2 {
+        font-size: 14px;
+      }
+
+      .mid img {
+        width: 100%;
+      }
+
+      .grid-2 .fourth-section-pic {
+        display: none;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-2 .fabric-pic {
+        width: 80px;
+        margin-top: 10px;
+      }
+
+      .grid-2 .factory-pic {
+        width: 100px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      .info-1 {
+        grid-gap: 30px;
+      }
+
+      .info-2 {
+        grid-gap: 30px;
+        margin-top: -10px;
+      }
+
+      .grid-2 .shop-info-2 {
+        font-size: 10px;
+      }
+
+      .grid-2 .shop-info-1 {
+        font-size: 10px;
+      }
+
+      footer .footer-grid {
+        grid-gap: 10px;
+
+      }
+
+      footer a {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width:990px) {
+      .grid-2 .fourth-section-pic {
+        object-fit: fill;
+      }
+
+      .grid-2 .fabric-pic {
+        width: 150px;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+
+      .grid-2 .factory-pic {
+        width: 150px;
+        margin-left: 10px;
+        margin-top: 10px;
+
+      }
+
+      .info-1 {
+        grid-gap: 30px;
+      }
+
+      .info-2 {
+        grid-gap: 50px;
+        margin-top: 10px;
+      }
+
+      .grid-2 .shop-info-2 {
+        font-size: 10px;
+      }
+
+      .grid-2 .shop-info-1 {
+        font-size: 10px;
+      }
+
+      footer .footer-grid {
+        margin-left: 70px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Femkit</h1>
+    <h2>Vintage Clothing Shop</h2>
+
+    <a href="#" class="arrow down">Down</a>
+
+    <a href="https://femkit.de/en" target="_blank" class="shop-link">Shop All</a>
+  </header>
+  <main>
+    <section class="grid">
+      <span class="col-sm">
+        <img src="images/grid-pic-2.PNG" alt="woman in vintage clothes 1" class="pic-2" />
+      </span>
+      <span class="col-sm">
+        <img src="images/grid-pic-1.jpg" alt="woman in vintage clothes 2" class="pic-1" />
+      </span>
+      <span class="col-sm">
+        <img src="images/grid-pic-3.jpg" class="pic-3" alt="woman in vintage clothes 3" />
+      </span>
+    </section>
+    <section class="mid">
+      <img src="images/mid-pic.JPG" alt="woman in vintage clothing" />
+    </section>
+    <section class="grid-2">
+      <div class="paragraph">
+        <span class="info-1">
+          <p class="shop-info-1">
+            The story of Femkit began with the search for a simple, classic
+            dress that flatters the figure and is affordable at the same
+            time.The designs breathe the air of yesterday and touch the
+            present.
+          </p>
+          <img src="images/grid-2-pic-2.png" class="fabric-pic" alt="picture of fabrics" />
+        </span>
+        <span class="info-2">
+          <img src="images/factory-pic.png" alt="picture of the shop's factory" class="factory-pic" />
+          <p class="shop-info-2">
+            Femkit is a Berlin-based slowfashion brand that deliberately
+            avoids in-house fabric production and instead relies on German and
+            European stock.
+          </p>
+        </span>
+      </div>
+      <div>
+        <img src="images/grid-2-pic.png" alt="vintage clothes" class="fourth-section-pic" />
+      </div>
+    </section>
+    <section class="last">
+      <img src="images/last-section-pic.JPG" alt="woman in a vintage wedding dress" class="last-section-pic" />
+    </section>
+  </main>
+  <footer>
+    <section class="footer-grid">
+      <div>
+        <a href="https://femkit.de/en" target="_blank">Femkit Official Website</a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/femkit/" target="_blank">Femkit Instagram Page</a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCkgmmixg1KfxVDPByVToPDA" target="_blank">Femkit Youtube Channel</a>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
